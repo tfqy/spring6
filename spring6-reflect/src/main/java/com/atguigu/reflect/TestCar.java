@@ -56,7 +56,7 @@ public class TestCar {
     //3、获取属性
     @Test
     public void test03() throws Exception {
-        Class clazz = Car.class;
+        Class<Car> clazz = Car.class;
         Car car = (Car) clazz.getDeclaredConstructor().newInstance();
         //获取所有public属性
         //Field[] fields = clazz.getFields();
@@ -78,15 +78,15 @@ public class TestCar {
     @Test
     public void test04() throws Exception {
         Car car = new Car("奔驰", 10, "黑色");
-        Class clazz = car.getClass();
+        Class<? extends Car> clazz = car.getClass();
         //1 public方法
         Method[] methods = clazz.getMethods();
-        for (Method m1 : methods) {
-            //System.out.println(m1.getName());
+        for (Method m : methods) {
+            //System.out.println(m.getName());
             //执行方法 toString
-            if (m1.getName().equals("toString")) {
-                String invoke = (String) m1.invoke(car);
-                //System.out.println("toString执行了："+invoke);
+            if (m.getName().equals("toString")) {
+                String invoke = (String) m.invoke(car);
+                System.out.println("toString执行了：" + invoke);
             }
         }
 

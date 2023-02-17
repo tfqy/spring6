@@ -7,6 +7,7 @@ import java.io.File;
 import java.lang.reflect.Field;
 import java.net.URL;
 import java.net.URLDecoder;
+import java.nio.charset.StandardCharsets;
 import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.Map;
@@ -24,19 +25,14 @@ public class AnnotationApplicationContext implements ApplicationContext {
         // com.atguigu
         try {
             //1 把.替换成\
-            String packagePath = basePackage.replaceAll("\\.",
-                    "\\\\");
-
+            String packagePath = basePackage.replaceAll("\\.", "\\\\");
             //2 获取包绝对路径
-            Enumeration<URL> urls
-                    = Thread.currentThread().getContextClassLoader()
-                    .getResources(packagePath);
+            Enumeration<URL> urls = Thread.currentThread().getContextClassLoader().getResources(packagePath);
             while (urls.hasMoreElements()) {
                 URL url = urls.nextElement();
-                String filePath = URLDecoder.decode(url.getFile(),
-                        "utf-8");
+                String filePath = URLDecoder.decode(url.getFile(), StandardCharsets.UTF_8);
                 //获取包前面路径部分，字符串截取
-                AnnotationApplicationContext.rootPath = filePath.substring(0, filePath.length() - packagePath.length());
+                rootPath = filePath.substring(0, filePath.length() - packagePath.length());
                 //包扫描
                 loadBean(new File(filePath));
             }
@@ -75,8 +71,7 @@ public class AnnotationApplicationContext implements ApplicationContext {
                 } else {
                     //4.2 遍历得到File对象不是文件夹，是文件，
                     //4.3 得到包路径+类名称部分-字符串截取
-                    String pathWithClass =
-                            child.getAbsolutePath().substring(AnnotationApplicationContext.rootPath.length() - 1);
+                    String pathWithClass = child.getAbsolutePath().substring(rootPath.length() - 1);
 
                     //4.4 判断当前文件类型是否.class
                     if (pathWithClass.contains(".class")) {
