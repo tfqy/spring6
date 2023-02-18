@@ -1,7 +1,6 @@
 package com.atguigu.spring6.aop.example;
 
 import java.lang.reflect.InvocationHandler;
-import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 import java.util.Arrays;
 
@@ -28,26 +27,21 @@ public class ProxyFactory {
         //第二个参数： Class[] interfaces：目录对象实现的所有接口的class类型数组
         Class<?>[] interfaces = target.getClass().getInterfaces();
         //第三个参数：InvocationHandler：设置代理对象实现目标对象方法的过程
-        InvocationHandler invocationHandler = new InvocationHandler() {
 
-            //第一个参数：代理对象
-            //第二个参数：需要重写目标对象的方法
-            //第三个参数：method方法里面参数
-            @Override
-            public Object invoke(Object proxy,
-                                 Method method,
-                                 Object[] args) throws Throwable {
+        //第一个参数：代理对象
+        //第二个参数：需要重写目标对象的方法
+        //第三个参数：method方法里面参数
+        InvocationHandler invocationHandler = (proxy, method, args) -> {
 
-                //方法调用之前输出
-                System.out.println("[动态代理][日志] " + method.getName() + "，参数：" + Arrays.toString(args));
+            //方法调用之前输出
+            System.out.println("[动态代理][日志] " + method.getName() + "，参数：" + Arrays.toString(args));
 
-                //调用目标的方法
-                Object result = method.invoke(target, args);
+            //调用目标的方法
+            Object result = method.invoke(target, args);
 
-                //方法调用之后输出
-                System.out.println("[动态代理][日志] " + method.getName() + "，结果：" + result);
-                return result;
-            }
+            //方法调用之后输出
+            System.out.println("[动态代理][日志] " + method.getName() + "，结果：" + result);
+            return result;
         };
         return Proxy.newProxyInstance(classLoader, interfaces, invocationHandler);
     }

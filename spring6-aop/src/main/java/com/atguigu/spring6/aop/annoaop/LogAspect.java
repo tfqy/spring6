@@ -51,8 +51,7 @@ public class LogAspect {
     @Around("execution(* com.atguigu.spring6.aop.annoaop.CalculatorImpl.*(..))")
     public Object aroundMethod(ProceedingJoinPoint joinPoint) {
         String methodName = joinPoint.getSignature().getName();
-        Object[] args = joinPoint.getArgs();
-        String argString = Arrays.toString(args);
+        String argString = Arrays.toString(joinPoint.getArgs());
         Object result = null;
         try {
             System.out.println("环绕通知==目标方法之前执行");
