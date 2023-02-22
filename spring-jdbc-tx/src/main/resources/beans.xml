@@ -11,7 +11,7 @@
     <!-- <context:component-scan base-package="com.atguigu.spring6.tx"></context:component-scan>
  -->
     <!--引入外部属性文件，创建数据源对象-->
-    <context:property-placeholder location="classpath:jdbc.properties"></context:property-placeholder>
+    <context:property-placeholder location="classpath:jdbc.properties"/>
     <!-- <bean id="druidDataSource" class="com.alibaba.druid.pool.DruidDataSource">
          <property name="url" value="${jdbc.url}"></property>
          <property name="driverClassName" value="${jdbc.driver}"></property>

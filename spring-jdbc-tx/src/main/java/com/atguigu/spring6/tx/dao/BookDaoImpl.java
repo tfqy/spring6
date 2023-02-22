@@ -21,14 +21,14 @@ public class BookDaoImpl implements BookDao {
     //更新库存
     @Override
     public void updateStock(Integer bookId) {
-        String sql = "update t_book set stock=stock-1 where book_id=?";
+        String sql = "update t_book set stock = stock - 1 where book_id = ?";
         jdbcTemplate.update(sql, bookId);
     }
 
     //更新用户表用户余额 -图书价格
     @Override
     public void updateUserBalance(Integer userId, Integer price) {
-        String sql = "update t_user set balance=balance-? where user_id=?";
+        String sql = "update t_user set balance = balance - ? where user_id = ?";
         jdbcTemplate.update(sql, price, userId);
     }
 }

@@ -6,12 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="51b99af5-848a-4e14-9b35-c62ae5ac5614" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring6-aop/src/main/java/com/atguigu/spring6/aop/annoaop/LogAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring6-aop/src/main/java/com/atguigu/spring6/aop/annoaop/LogAspect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring6-aop/src/main/java/com/atguigu/spring6/aop/example/ProxyFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring6-aop/src/main/java/com/atguigu/spring6/aop/example/ProxyFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring6-aop/src/main/resources/bean.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring6-aop/src/main/resources/bean.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring6-aop/src/main/resources/beanaop.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring6-aop/src/main/resources/beanaop.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring6-aop/target/classes/bean.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring6-aop/target/classes/bean.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring6-aop/target/classes/beanaop.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring6-aop/target/classes/beanaop.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-jdbc-tx/src/main/java/com/atguigu/spring6/tx/dao/BookDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-jdbc-tx/src/main/java/com/atguigu/spring6/tx/dao/BookDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-jdbc-tx/src/main/resources/beans.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-jdbc-tx/src/main/resources/beans.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring6-junit/src/main/resources/bean.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring6-junit/src/main/resources/bean.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring6-junit/target/classes/bean.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring6-junit/target/classes/bean.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +56,7 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.33448276",
     "settings.editor.selected.configurable": "preferences.pluginManager",
-    "spring.configuration.checksum": "09a671d8242e271cb28332bb3fa3139e",
+    "spring.configuration.checksum": "50c389c32e3f3d615ec20cf21c2e4ce5",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -80,7 +78,7 @@
       <recent name="com.atguigu.spring6.iocxml.ditest" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestAop.testAdd">
+  <component name="RunManager" selected="JUnit.SpringTestJunit5.testUser">
     <configuration name="TestCal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.atguigu.spring6.aop.example.TestCal" />
       <module name="spring6-aop" />
@@ -94,15 +92,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestUser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.TestUser" />
-      <module name="atguigu-spring" />
+    <configuration name="SpringTestJunit4.testUser4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring6-junit" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.atguigu.*" />
+          <option name="PATTERN" value="com.atguigu.spring6.junit.junit4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.atguigu.spring6.junit.junit4" />
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.spring6.junit.junit4.SpringTestJunit4" />
+      <option name="METHOD_NAME" value="testUser4" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringTestJunit5.testUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring6-junit" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.spring6.junit.junit5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.atguigu.spring6.junit.junit5" />
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.spring6.junit.junit5.SpringTestJunit5" />
+      <option name="METHOD_NAME" value="testUser" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -138,29 +155,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestCar.test04" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring6-reflect" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.atguigu.reflect.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.atguigu.reflect" />
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.reflect.TestCar" />
-      <option name="METHOD_NAME" value="test04" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SpringTestJunit5.testUser" />
+        <item itemvalue="JUnit.SpringTestJunit4.testUser4" />
         <item itemvalue="JUnit.TestAop.testAdd" />
         <item itemvalue="Application.TestCal" />
         <item itemvalue="JUnit.TestAop" />
-        <item itemvalue="Application.TestUser" />
-        <item itemvalue="JUnit.TestCar.test04" />
       </list>
     </recent_temporary>
   </component>
@@ -184,7 +185,8 @@
       <workItem from="1671244349824" duration="20289000" />
       <workItem from="1671329131898" duration="23388000" />
       <workItem from="1676613190061" duration="5239000" />
-      <workItem from="1676696612545" duration="8171000" />
+      <workItem from="1676696612545" duration="8312000" />
+      <workItem from="1677042057992" duration="3552000" />
     </task>
     <task id="LOCAL-00001" summary="初始化">
       <created>1676613628499</created>
@@ -200,7 +202,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676618422288</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="AOP">
+      <created>1676705215651</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1676705215651</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -209,7 +218,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="初始化" />
     <MESSAGE value="手写IOC" />
-    <option name="LAST_COMMIT_MESSAGE" value="手写IOC" />
+    <MESSAGE value="AOP" />
+    <option name="LAST_COMMIT_MESSAGE" value="AOP" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
