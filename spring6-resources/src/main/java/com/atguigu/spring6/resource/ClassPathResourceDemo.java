@@ -27,6 +27,6 @@ public class ClassPathResourceDemo {
     }
 
     public static void main(String[] args) {
-        ClassPathResourceDemo.loadClasspathResource("atguigu.txt");
+        loadClasspathResource("atguigu.txt");
     }
 }

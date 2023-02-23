@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51b99af5-848a-4e14-9b35-c62ae5ac5614" name="Changes" comment="">
+    <list default="true" id="51b99af5-848a-4e14-9b35-c62ae5ac5614" name="Changes" comment="Resource,guji">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-jdbc-tx/src/main/java/com/atguigu/spring6/tx/dao/BookDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-jdbc-tx/src/main/java/com/atguigu/spring6/tx/dao/BookDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-jdbc-tx/src/main/resources/beans.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-jdbc-tx/src/main/resources/beans.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring6-junit/src/main/resources/bean.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring6-junit/src/main/resources/bean.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring6-junit/target/classes/bean.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring6-junit/target/classes/bean.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring6-i18n/src/main/java/com/atguigu/spring6/javai18n/ResourceI18n.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring6-i18n/src/main/java/com/atguigu/spring6/javai18n/ResourceI18n.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring6-i18n/src/main/resources/atguigu_en_GB.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring6-i18n/src/main/resources/atguigu_en_GB.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring6-resources/src/main/java/com/atguigu/spring6/resource/ClassPathResourceDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring6-resources/src/main/java/com/atguigu/spring6/resource/ClassPathResourceDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring6-resources/src/main/java/com/atguigu/spring6/resource/UrlResourceDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring6-resources/src/main/java/com/atguigu/spring6/resource/UrlResourceDemo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +55,7 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.33448276",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "File.Encoding",
     "spring.configuration.checksum": "50c389c32e3f3d615ec20cf21c2e4ce5",
     "vue.rearranger.settings.migration": "true"
   }
@@ -78,13 +78,13 @@
       <recent name="com.atguigu.spring6.iocxml.ditest" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SpringTestJunit5.testUser">
-    <configuration name="TestCal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.spring6.aop.example.TestCal" />
-      <module name="spring6-aop" />
+  <component name="RunManager" selected="Application.com.atguigu.spring6.springi18n.ResourceI18n">
+    <configuration name="ClassPathResourceDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.spring6.resource.ClassPathResourceDemo" />
+      <module name="spring6-resources" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.atguigu.spring6.aop.example.*" />
+          <option name="PATTERN" value="com.atguigu.spring6.resource.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -92,76 +92,65 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpringTestJunit4.testUser4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring6-junit" />
+    <configuration name="FileSystemResourceDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.spring6.resource.FileSystemResourceDemo" />
+      <module name="spring6-resources" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.atguigu.spring6.junit.junit4.*" />
+          <option name="PATTERN" value="com.atguigu.spring6.resource.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.atguigu.spring6.junit.junit4" />
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.spring6.junit.junit4.SpringTestJunit4" />
-      <option name="METHOD_NAME" value="testUser4" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpringTestJunit5.testUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring6-junit" />
+    <configuration name="ResourceI18n" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.spring6.javai18n.ResourceI18n" />
+      <module name="spring6-i18n" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.atguigu.spring6.junit.junit5.*" />
+          <option name="PATTERN" value="com.atguigu.spring6.javai18n.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.atguigu.spring6.junit.junit5" />
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.spring6.junit.junit5.SpringTestJunit5" />
-      <option name="METHOD_NAME" value="testUser" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestAop" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring6-aop" />
+    <configuration name="TestDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.spring6.resourceloaderaware.TestDemo" />
+      <module name="spring6-resources" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.atguigu.spring6.aop.annoaop.*" />
+          <option name="PATTERN" value="com.atguigu.spring6.resourceloaderaware.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.atguigu.spring6.aop.annoaop" />
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.spring6.aop.annoaop.TestAop" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestAop.testAdd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring6-aop" />
+    <configuration name="com.atguigu.spring6.springi18n.ResourceI18n" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.spring6.springi18n.ResourceI18n" />
+      <module name="spring6-i18n" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.atguigu.spring6.aop.xmlaop.*" />
+          <option name="PATTERN" value="com.atguigu.spring6.springi18n.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.atguigu.spring6.aop.xmlaop" />
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.spring6.aop.xmlaop.TestAop" />
-      <option name="METHOD_NAME" value="testAdd" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SpringTestJunit5.testUser" />
-        <item itemvalue="JUnit.SpringTestJunit4.testUser4" />
-        <item itemvalue="JUnit.TestAop.testAdd" />
-        <item itemvalue="Application.TestCal" />
-        <item itemvalue="JUnit.TestAop" />
+        <item itemvalue="Application.com.atguigu.spring6.springi18n.ResourceI18n" />
+        <item itemvalue="Application.ResourceI18n" />
+        <item itemvalue="Application.TestDemo" />
+        <item itemvalue="Application.FileSystemResourceDemo" />
+        <item itemvalue="Application.ClassPathResourceDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -186,7 +175,8 @@
       <workItem from="1671329131898" duration="23388000" />
       <workItem from="1676613190061" duration="5239000" />
       <workItem from="1676696612545" duration="8312000" />
-      <workItem from="1677042057992" duration="3552000" />
+      <workItem from="1677042057992" duration="3929000" />
+      <workItem from="1677125760648" duration="4032000" />
     </task>
     <task id="LOCAL-00001" summary="初始化">
       <created>1676613628499</created>
@@ -209,7 +199,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676705215651</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="事务">
+      <created>1677046261884</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1677046261884</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,7 +216,8 @@
     <MESSAGE value="初始化" />
     <MESSAGE value="手写IOC" />
     <MESSAGE value="AOP" />
-    <option name="LAST_COMMIT_MESSAGE" value="AOP" />
+    <MESSAGE value="事务" />
+    <option name="LAST_COMMIT_MESSAGE" value="事务" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

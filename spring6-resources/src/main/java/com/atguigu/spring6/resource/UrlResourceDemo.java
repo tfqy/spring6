@@ -10,7 +10,7 @@ public class UrlResourceDemo {
 //        loadUrlResource("http://www.baidu.com");
 
         //file前缀
-        UrlResourceDemo.loadUrlResource("file:atguigu.txt");
+        loadUrlResource("file:atguigu.txt");
     }
 
     //访问前缀http、file
