@@ -17,6 +17,6 @@ public class CannotBlankValidation implements ConstraintValidator<CannotBlank, S
             context.buildConstraintViolationWithTemplate("can not contains blank").addConstraintViolation();
             return false;
         }
-        return false;
+        return true;
     }
 }

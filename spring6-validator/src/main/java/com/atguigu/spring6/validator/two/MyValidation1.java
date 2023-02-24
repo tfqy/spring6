@@ -15,6 +15,7 @@ public class MyValidation1 {
 
     public boolean validatorByUserOne(User user) {
         Set<ConstraintViolation<User>> validate = validator.validate(user);
+        // 如果不为空，说明校验失败
         return validate.isEmpty();
     }
 

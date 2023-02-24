@@ -12,7 +12,7 @@ public class TestUser {
         User user = new User();
         user.setName("lucy");
         user.setPhone("13566754321");
-        user.setMessage("test a t guigu");
+        user.setMessage("test");
         service.testMethod(user);
     }
 }
